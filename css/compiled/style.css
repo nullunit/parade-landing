@@ -30,6 +30,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', helvetica, arial, sans-serif;
+  font-weight: 400;
   line-height: 1.6;
   color: #230707; }
 
@@ -105,7 +106,7 @@ h2 {
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
-  margin: 0 0 30px;
+  margin: 40px 0 10px;
   text-align: center; }
   h2 span {
     display: block; }
@@ -150,7 +151,7 @@ button, .button {
   color: #ffffff;
   font-weight: 600;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 30px;
   padding: 16px 24px;
   width: 100%;
   text-decoration: none;
@@ -184,10 +185,10 @@ header {
     header nav .link-button {
       display: none;
       font-size: 14px;
-      line-height: 16px;
+      line-height: 30px;
       padding: 8px 32px 8px 0;
       text-decoration: none;
-      color: #230707;
+      color: #ffffff;
       transition: .1s color ease-in-out; }
       header nav .link-button:hover {
         color: #230707; }
@@ -196,13 +197,13 @@ header {
       background-color: #E5A024;
       color: #230707;
       font-size: 14px;
-      line-height: 16px;
+      line-height: 30px;
       padding: 8px 32px; }
 
 .color-band {
   position: relative;
   background-image: linear-gradient(#FFDEBA, #F6DAD1);
-  padding: 60px 0;
+  padding: 50px 0;
   overflow: visible; }
 
 .theme1 {
@@ -215,10 +216,21 @@ header {
 .hero {
   position: relative;
   height: auto;
-  padding: 80px 0 80px; }
+  padding: 40px 0 40px; }
   .hero .button {
     margin: 20px 0 0;
     display: block; }
+  .hero .hero-illo {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    margin-top: -30px; }
+  .hero .papers-illo {
+    position: absolute;
+    top: -350px;
+    left: 80%;
+    width: 200px; }
   .hero .three-features {
     display: flex;
     justify-content: space-between;
@@ -226,7 +238,7 @@ header {
     .hero .three-features div {
       width: 33.333%;
       text-align: center;
-      padding: 0 30px; }
+      padding: 0 5px; }
       .hero .three-features div img {
         width: 100%;
         margin: 20px 0; }
@@ -245,7 +257,8 @@ footer {
 
   h2 {
     font-size: 24px;
-    line-height: 24px; }
+    line-height: 24px;
+    margin: 60px 0 10px; }
 
   p {
     font-size: 20px;
@@ -269,14 +282,29 @@ footer {
     padding: 0;
     width: 90%; }
 
-  .color-band .push-left {
-    width: 90%;
-    margin: 0 auto;
-    padding: 0;
-    padding-right: 35%; }
-
-  .hero .how-it-works {
+  .color-band {
     padding: 60px 0; }
+    .color-band .push-left {
+      width: 90%;
+      margin: 0 auto;
+      padding: 0;
+      padding-right: 35%; }
+
+  .hero .hero-illo {
+    position: absolute;
+    top: -195px;
+    left: 55%;
+    width: 593px; }
+  .hero .papers-illo {
+    position: absolute;
+    top: -450px;
+    left: 55%;
+    width: 298px; }
+  .hero .how-it-works .three-features div {
+    padding: 0 30px; }
+    .hero .how-it-works .three-features div img {
+      width: 100%;
+      margin: 10px 0; }
 
   .columns {
     display: flex;
@@ -323,15 +351,15 @@ footer {
 
   .color-band .push-left {
     width: 960px;
-    padding-right: 35%; }
-
-  footer .margins {
-    padding: 16px 0; }
+    padding-right: 32%; }
 
   .hero {
     padding-top: 50px; }
-    .hero .body-copy {
-      padding-right: 20%; } }
+    .hero .hero-illo {
+      top: -170px; }
+
+  footer .margins {
+    padding: 16px 0; } }
 @media screen and (min-width: 1440px) {
   h1 {
     font-size: 60px;
